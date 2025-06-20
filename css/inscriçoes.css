@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #001133;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a.active {
+    color: #8a5cff;
+    font-weight: bold;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    background: #ccc;
+    border-radius: 50%;
+}
+
+main {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    background: rgb(226, 216, 216);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #ebe7e7;
+    padding: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card .info {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.card .info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.card .info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.card .right {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+.card.destaque img {
+    width: 150px;
+    height: 90px;
+}
+
+.card-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card-grid .card {
+    flex: 1 1 45%;
+}

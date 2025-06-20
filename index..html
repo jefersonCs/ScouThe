@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela Usuario</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+    <header>
+        <div><img src="" alt="Logo" class="logo" /></div>
+        <nav>
+            <div>✓ Inscrições</div>
+            <div>☆ Desempenho</div>
+            <div class="iconePerfil"></div>
+        </nav>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Buscar Campeonatos, Peneiras, Clubes..." />
+        <select>
+            <option>Local</option>
+        </select>
+        <select>
+            <option>Modalidade</option>
+        </select>
+        <select>
+            <option>Faixa Etária</option>
+        </select>
+    </div>
+
+    <div class="carousel">
+        <button class="carousel-button left" onclick="moveSlide(-1)">&#8249;</button>
+        <div class="carousel-slide" id="carousel-slide">
+            <div class="card" style="background-image: url('./img/basquete.png')">
+                <div class="card-content">
+                    <h3>Campeonato Estadual - Basquete</h3>
+                    <p>19 de Outubro de 2025</p>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('./img/fut.png')">
+                <div class="card-content">
+                    <h3>Torneio de Futebol</h3>
+                    <p>22 de Outubro de 2025</p>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('./img/volei.png')">
+                <div class="card-content">
+                    <h3>Torneio de Vôlei</h3>
+                    <p>25 de Outubro de 2025</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-button right" onclick="moveSlide(1)">&#8250;</button>
+    </div>
+
+    <div class="info-bar">
+        <span>📍 Porto Alegre - RS</span>
+        <span>📅 domingo, 19 de Out às 13h30</span>
+    </div>
+
+    <footer>
+        • Bora pro Jogo?
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

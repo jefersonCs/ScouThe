@@ -16,4 +16,8 @@
         margin-right: 8px;
         vertical-align: middle;
     }
+
+    #flex{
+    grid-template-columns: repeat(1, 1fr);
+    }
 }

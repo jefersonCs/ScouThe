@@ -38,11 +38,25 @@ main {
     margin: auto;
 }
 
-h2 {
-    margin-bottom: 20px;
+#flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+
+
 }
 
+    h2{
+        display: flex;
+        justify-content: center;
+    }
+
 .card {
+    width: 250px;
+    height: 300px;
     display: flex;
     background: rgb(226, 216, 216);
     border-radius: 10px;

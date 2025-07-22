@@ -13,15 +13,12 @@
 </head>
 <body>
 
-<header class="d-flex flex-wrap align-items-center justify-content-between py-3 mb-4">
-    <a href="#" class="d-inline-flex align-items-center text-decoration-none">
-      <img src="https://i.postimg.cc/z3Z03Gwt/Chat-GPT-Image-18-de-jun-de-2025-21-56-18.png" alt="Logo" width="60" height="50" class="me-2" />
-      <span class="text-white fs-4">ScouTchê</span>
-    </a>
+<header class="bg-dark text-white p-3 d-flex justify-content-between align-items-center">
+  <h1 class="fs-4 m-0">Minha Plataforma</h1>
 
-    <div class="flex-grow-1 d-none d-md-flex justify-content-center">
+<div class="flex-grow-1 d-none d-md-flex justify-content-center">
       <nav class="nav-menu d-flex flex-row align-items-center gap-3" id="nav">
-        <a href="./home.html" class="nav-link px-2 icon-home ativo">
+        <a href="#" class="nav-link px-2 icon-home ativo">
           <img class="icon-header" src="https://i.postimg.cc/Hx14CkmB/image.png" alt="icon-home" />Página Principal
         </a>
         <a href="./index.html" class="nav-link px-2 icon-criar ativo">
@@ -35,11 +32,32 @@
         </a>
       </nav>
     </div>
+  <div class="d-flex align-items-center gap-2">
+    <button id="btn-login" class="btn btn-outline-light btn-sm">Login</button>
+    <button id="btn-signup" class="btn btn-light btn-sm">Cadastrar</button>
 
-    <button class="menu-toggle d-md-none btn text-white" data-bs-toggle="modal" data-bs-target="#menuModal">
-      &#9776;
+    <!-- Menu Mobile (ícone de menu para abrir modal lateral ou menu) -->
+    <button class="btn btn-outline-light btn-sm d-md-none" data-bs-toggle="modal" data-bs-target="#menuModal">
+      ☰
     </button>
-  </header>
+  </div>
+</header>
+
+<div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen-sm-down">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="menuModalLabel">Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body d-flex flex-column gap-3">
+        <a href="home.html" class="text-white text-decoration-none">Início</a>
+        <a href="#servicos" class="text-white text-decoration-none">Serviços</a>
+        <a href="#contato" class="text-white text-decoration-none">Contato</a>
+      </div>
+    </div>
+  </div>
+</div>
 
   <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen-sm-down">
@@ -47,7 +65,7 @@
         <div class="modal-header border-0">
           <h5 class="modal-title" id="menuModalLabel">Menu</h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
-        </div>
+        </div>  
         <div class="modal-body d-flex flex-column gap-3 px-4">
           <a href="./home.html" class="nav-link text-white d-flex align-items-center">
             <img class="icon-header me-2" src="https://i.postimg.cc/Hx14CkmB/image.png" alt="icon-home" />
